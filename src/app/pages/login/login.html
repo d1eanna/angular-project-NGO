@@ -1,0 +1,53 @@
+<section class="min-h-screen bg-[#FEF1C9] flex items-center justify-center px-6">
+  <div class="w-full max-w-md bg-white rounded-3xl shadow-sm p-8">
+    <h2 class="text-3xl font-extrabold text-gray-900 text-center mb-2">
+      Welcome
+    </h2>
+    <p class="text-gray-600 text-center mb-8">
+      Login or create an account to continue
+    </p>
+
+    <div class="flex mb-6 bg-gray-100 rounded-xl p-1">
+      <button
+        class="flex-1 py-2 rounded-lg font-semibold"
+        [class.bg-white]="mode === 'login'"
+        (click)="mode = 'login'"
+      >
+        Login
+      </button>
+      <button
+        class="flex-1 py-2 rounded-lg font-semibold"
+        [class.bg-white]="mode === 'signup'"
+        (click)="mode = 'signup'"
+      >
+        Sign up
+      </button>
+    </div>
+
+    <form (ngSubmit)="submit()" class="space-y-4">
+      <input
+        type="email"
+        placeholder="Email"
+        class="w-full px-4 py-3 border rounded-xl focus:outline-none"
+        [(ngModel)]="email"
+        name="email"
+        required
+      />
+
+      <input
+        type="password"
+        placeholder="Password"
+        class="w-full px-4 py-3 border rounded-xl focus:outline-none"
+        [(ngModel)]="password"
+        name="password"
+        required
+      />
+
+      <button
+        class="w-full bg-black text-white py-3 rounded-xl font-semibold"
+      >
+        {{ mode === 'login' ? 'Login' : 'Create account' }}
+      </button>
+    </form>
+  </div>
+</section>
