@@ -1,17 +1,17 @@
-<header class="w-full">
-  <div class="max-w-7xl mx-auto flex items-center justify-between px-8 py-6">
-    <span class="text-white font-bold text-xl">largerthan</span>
+<header class="site-header">
+  <div class="site-header__container">
+    <span class="site-header__logo">largerthan</span>
 
-    <nav class="flex gap-8 text-black">
-      <a href="/">Home</a>
-      <a href="/about-us">About us</a>
-      <a href="/what-we-do">What we do</a>
-      <a href="/media">Media</a>
-      <a href="/contact">Contact</a>
+    <nav class="site-header__nav">
+      <a href="/" class="site-header__link">Home</a>
+      <a href="/about-us" class="site-header__link">About us</a>
+      <a href="/what-we-do" class="site-header__link">What we do</a>
+      <a href="/media" class="site-header__link">Media</a>
+      <a href="/contact" class="site-header__link">Contact</a>
     </nav>
 
     <button
-      class="bg-black text-white px-5 py-2 rounded-md"
+      class="site-header__btn"
       onclick="localStorage.removeItem('loggedIn'); location.href='/login'"
     >
       Logout

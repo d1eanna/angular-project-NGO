@@ -1,0 +1,131 @@
+.wwd-hero {
+  background: #ffffff;
+  padding: 64px 0;
+}
+
+.wwd-hero__container {
+  max-width: 1152px;
+  margin: 0 auto;
+  padding: 0 24px;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 48px;
+  align-items: center;
+}
+
+@media (min-width: 1024px) {
+  .wwd-hero__container {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.wwd-kicker {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 16px;
+}
+
+.wwd-kicker__line {
+  width: 40px;
+  height: 2px;
+  background: #1f2937;
+}
+
+.wwd-kicker__text {
+  text-transform: uppercase;
+  letter-spacing: 0.18em;
+  font-size: 12px;
+  font-weight: 600;
+  color: #4b5563;
+}
+
+.wwd-hero__title {
+  font-size: 30px;
+  font-weight: 700;
+  margin: 0 0 16px 0;
+  line-height: 1.15;
+  color: #111827;
+}
+
+@media (min-width: 1024px) {
+  .wwd-hero__title {
+    font-size: 36px;
+  }
+}
+
+.wwd-hero__desc {
+  color: #4b5563;
+  font-size: 14px;
+  line-height: 1.7;
+  max-width: 448px;
+  margin: 0;
+}
+
+.wwd-hero__img {
+  width: 100%;
+  height: 260px;
+  object-fit: cover;
+  border-radius: 12px;
+  display: block;
+}
+
+.wwd-services {
+  background: #fef3c7;
+  padding: 64px 0;
+}
+
+.wwd-services__container {
+  max-width: 1152px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+.wwd-services__title {
+  font-size: 24px;
+  font-weight: 700;
+  margin: 0 0 40px 0;
+  color: #111827;
+}
+
+.wwd-services__grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 40px;
+  font-size: 14px;
+}
+
+@media (min-width: 768px) {
+  .wwd-services__grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.wwd-item {
+  display: flex;
+  gap: 16px;
+}
+
+.wwd-item__icon {
+  width: 32px;
+  height: 32px;
+  background: #000000;
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #ffffff;
+  flex: 0 0 32px;
+}
+
+.wwd-item__title {
+  font-weight: 600;
+  margin-bottom: 4px;
+  color: #111827;
+}
+
+.wwd-item__text {
+  color: #4b5563;
+  margin: 0;
+  line-height: 1.6;
+}

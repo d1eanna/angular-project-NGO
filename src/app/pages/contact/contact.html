@@ -1,124 +1,116 @@
 <app-header></app-header>
 
-<section class="bg-[#FFF1C9]">
-  <div class="max-w-7xl mx-auto px-8 py-24 grid grid-cols-1 lg:grid-cols-2 gap-20">
-    <div>
-      <div class="flex items-center gap-4 mb-8">
-        <span class="block w-16 h-[2px] bg-black"></span>
-        <span class="uppercase tracking-widest text-sm font-semibold">Contact us</span>
+<section class="contact-hero">
+  <div class="contact-hero__container">
+    <div class="contact-hero__left">
+      <div class="contact-kicker">
+        <span class="contact-kicker__line"></span>
+        <span class="contact-kicker__text">Contact us</span>
       </div>
 
-      <h1 class="text-5xl lg:text-6xl font-extrabold text-gray-900 leading-tight mb-6">
+      <h1 class="contact-hero__title">
         We'd love to hear<br />from you
       </h1>
 
-      <p class="text-gray-600 max-w-md leading-relaxed">
+      <p class="contact-hero__desc">
         Have any question in mind or want to enquire? Please feel free to contact us through the
         form or the following details.
       </p>
     </div>
 
-    <div class="space-y-10">
-      <div>
-        <h3 class="text-xl font-bold mb-4">Let's talk!</h3>
-        <div class="flex flex-col sm:flex-row gap-8 text-gray-800">
+    <div class="contact-hero__right">
+      <div class="contact-block">
+        <h3 class="contact-block__title">Let's talk!</h3>
+        <div class="contact-block__row">
           <span>+234 09012346514</span>
           <span>hello@largerthani.com</span>
         </div>
-        <div class="mt-6 h-px bg-gray-300"></div>
+        <div class="contact-block__divider"></div>
       </div>
 
-      <div>
-        <h4 class="font-bold mb-2">Headoffice</h4>
-        <p class="text-gray-600">
+      <div class="contact-block">
+        <h4 class="contact-block__subtitle">Headoffice</h4>
+        <p class="contact-block__text">
           8 Brewery Drive, Lagos,<br />
           Nigeria.
         </p>
       </div>
 
-      <div>
-        <h4 class="font-bold mb-2">Branch Office</h4>
-        <p class="text-gray-600">
+      <div class="contact-block">
+        <h4 class="contact-block__subtitle">Branch Office</h4>
+        <p class="contact-block__text">
           Opp Opolo round about, Yenagoa, Bayelsa,<br />
           Nigeria
         </p>
       </div>
 
-      <div class="flex gap-6 text-gray-700 text-xl">
-        <span class="cursor-pointer">f</span>
-        <span class="cursor-pointer">t</span>
-        <span class="cursor-pointer">in</span>
+      <div class="contact-socials">
+        <span class="contact-socials__item">f</span>
+        <span class="contact-socials__item">t</span>
+        <span class="contact-socials__item">in</span>
       </div>
     </div>
   </div>
 </section>
 
-<section class="bg-white min-h-screen flex items-center justify-center px-6 py-20">
-  <form
-    (ngSubmit)="send()"
-    class="w-full max-w-5xl bg-white grid grid-cols-1 md:grid-cols-2 gap-x-16 gap-y-10"
-  >
-    <div>
-      <label class="block text-sm font-semibold text-gray-700 mb-2">First Name</label>
+<section class="contact-form">
+  <form (ngSubmit)="send()" class="contact-form__grid">
+    <div class="field">
+      <label class="field__label">First Name</label>
       <input
         type="text"
         name="firstName"
         [(ngModel)]="form.firstName"
         placeholder="John"
-        class="w-full border-b border-gray-300 py-3 text-gray-900 focus:outline-none focus:border-black"
+        class="field__input"
       />
     </div>
 
-    <div>
-      <label class="block text-sm font-semibold text-gray-700 mb-2">Last Name</label>
+    <div class="field">
+      <label class="field__label">Last Name</label>
       <input
         type="text"
         name="lastName"
         [(ngModel)]="form.lastName"
         placeholder="Doe"
-        class="w-full border-b border-gray-300 py-3 text-gray-900 focus:outline-none focus:border-black"
+        class="field__input"
       />
     </div>
 
-    <div>
-      <label class="block text-sm font-semibold text-gray-700 mb-2">Email Id</label>
+    <div class="field">
+      <label class="field__label">Email Id</label>
       <input
         type="email"
         name="email"
         [(ngModel)]="form.email"
         placeholder="johndoe@gmail.com"
-        class="w-full border-b border-gray-300 py-3 text-gray-900 focus:outline-none focus:border-black"
+        class="field__input"
       />
     </div>
 
-    <div>
-      <label class="block text-sm font-semibold text-gray-700 mb-2">Subject</label>
+    <div class="field">
+      <label class="field__label">Subject</label>
       <input
         type="text"
         name="subject"
         [(ngModel)]="form.subject"
-        class="w-full border-b border-gray-300 py-3 text-gray-900 focus:outline-none focus:border-black"
+        class="field__input"
       />
     </div>
 
-    <div class="md:col-span-2">
-      <label class="block text-sm font-semibold text-gray-700 mb-2">Message</label>
+    <div class="field field--full">
+      <label class="field__label">Message</label>
       <textarea
         rows="4"
         name="message"
         [(ngModel)]="form.message"
         placeholder="Type your Message"
-        class="w-full border-b border-gray-300 py-3 text-gray-900 resize-none focus:outline-none focus:border-black"
+        class="field__textarea"
       ></textarea>
     </div>
 
-    <div class="md:col-span-2 flex justify-center pt-10">
-      <button
-        type="submit"
-        class="bg-[#F5CF54] text-black font-semibold px-16 py-4 rounded-md hover:opacity-90 transition"
-      >
-        Send message
-      </button>
+    <div class="contact-form__actions">
+      <button type="submit" class="contact-form__btn">Send message</button>
     </div>
   </form>
 </section>

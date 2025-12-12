@@ -1,20 +1,16 @@
 <app-header></app-header>
 
-<section class="bg-white py-16">
-  <div class="max-w-6xl mx-auto px-6">
-    <div class="flex items-center gap-4 mb-6">
-      <span class="w-10 h-[2px] bg-gray-800"></span>
-      <span class="uppercase tracking-widest text-xs font-semibold text-gray-600"
-        >Know about us</span
-      >
+<section class="about-page">
+  <div class="about-page__container">
+    <div class="kicker">
+      <span class="kicker__line"></span>
+      <span class="kicker__text">Know about us</span>
     </div>
 
-    <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start mb-12">
-      <h2 class="text-3xl lg:text-4xl font-bold text-gray-900 leading-tight">
-        We are a non-governmental organization
-      </h2>
+    <div class="about-page__intro">
+      <h2 class="about-page__title">We are a non-governmental organization</h2>
 
-      <p class="text-gray-600 text-sm leading-relaxed">
+      <p class="about-page__desc">
         Aenean faucibus nibh et justo cursus id rutrum lorem imperdiet. Nunc ut sem vitae risus
         tristique posuere.
         <br /><br />
@@ -24,137 +20,132 @@
       </p>
     </div>
 
-    <div class="relative rounded-xl overflow-hidden mb-16">
-      <img src="assets/images/peopleHappy.png" class="w-full h-[320px] object-cover" />
-      <div class="absolute inset-0 bg-black/40"></div>
-      <div class="absolute inset-0 flex items-center justify-center">
-        <div class="w-12 h-12 bg-white rounded-full flex items-center justify-center text-lg">
-          ▶
+    <div class="about-page__video">
+      <img src="assets/images/peopleHappy.png" class="about-page__videoImg" />
+      <div class="about-page__videoOverlay"></div>
+      <div class="about-page__videoCenter">
+        <div class="about-page__videoPlay">▶</div>
+      </div>
+    </div>
+
+    <div class="about-page__mv">
+      <div class="mv-card">
+        <span class="mv-card__kicker">Our mission</span>
+        <h3 class="mv-card__title">
+          We make sure to provide inclusive care for children with special needs
+        </h3>
+        <p class="mv-card__text">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros
+          elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut
+          commodo diam libero vitae erat. Aenean faucibus nibh et justo cursus id rutrum lorem
+          imperdiet. Nunc ut sem vitae risus tristique posuere.
+        </p>
+      </div>
+
+      <div class="mv-card">
+        <span class="mv-card__kicker">Our vision</span>
+        <h3 class="mv-card__title">Provide more inclusive care to children around the world</h3>
+        <p class="mv-card__text">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros
+          elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut
+          commodo diam libero vitae erat. Aenean faucibus nibh et justo cursus id rutrum lorem
+          imperdiet. Nunc ut sem vitae risus tristique posuere.
+        </p>
+      </div>
+    </div>
+
+    <div class="about-page__supporters">
+      <span class="about-page__supportersTitle">Our supporters</span>
+      <div class="about-page__supportersGrid">
+        <span>logoipsum</span>
+        <span>logoipsum</span>
+        <span>logoipsum</span>
+        <span>logoipsum</span>
+        <span>logoipsum</span>
+        <span>logoipsum</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="awards">
+  <div class="awards__container">
+    <h2 class="awards__title">Awards & Recognitions</h2>
+
+    <div class="awards__grid">
+      <div class="award">
+        <div class="award__icon">★</div>
+        <div class="award__year">2021</div>
+        <div class="award__name">Best NGO Award</div>
+      </div>
+      <div class="award">
+        <div class="award__icon">★</div>
+        <div class="award__year">2018</div>
+        <div class="award__name">Global Award</div>
+      </div>
+      <div class="award">
+        <div class="award__icon">★</div>
+        <div class="award__year">2014</div>
+        <div class="award__name">CSR Award</div>
+      </div>
+      <div class="award">
+        <div class="award__icon">★</div>
+        <div class="award__year">2010</div>
+        <div class="award__name">NGO of the year</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="journey">
+  <div class="journey__container">
+    <div class="journey__text">
+      <span class="journey__kicker">Our journey</span>
+      <h2 class="journey__title">How we raised 34M</h2>
+      <p class="journey__desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+
+      <div class="journey__stats">
+        <div class="journey__stat">
+          34M+<br /><span class="journey__statLabel">Donations</span>
+        </div>
+        <div class="journey__stat">
+          400+<br /><span class="journey__statLabel">Volunteers</span>
+        </div>
+        <div class="journey__stat">
+          20+<br /><span class="journey__statLabel">Care homes</span>
         </div>
       </div>
     </div>
 
-    <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 mb-16 bg-yellow-200 p-8 rounded-xl">
-      <div>
-        <span class="uppercase text-xs tracking-widest text-gray-500 font-semibold"
-          >Our mission</span
-        >
-        <h3 class="text-xl font-semibold mt-3 mb-3">
-          We make sure to provide inclusive care for children with special needs
-        </h3>
-        <p class="text-gray-600 text-sm">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros
-          elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut
-          commodo diam libero vitae erat. Aenean faucibus nibh et justo cursus id rutrum lorem
-          imperdiet. Nunc ut sem vitae risus tristique posuere.
-        </p>
-      </div>
-
-      <div>
-        <span class="uppercase text-xs tracking-widest text-gray-500 font-semibold"
-          >Our vision</span
-        >
-        <h3 class="text-xl font-semibold mt-3 mb-3">
-          Provide more inclusive care to children around the world
-        </h3>
-        <p class="text-gray-600 text-sm">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros
-          elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut
-          commodo diam libero vitae erat. Aenean faucibus nibh et justo cursus id rutrum lorem
-          imperdiet. Nunc ut sem vitae risus tristique posuere.
-        </p>
-      </div>
-    </div>
-
-    <div class="mb-16">
-      <span class="uppercase text-xs tracking-widest text-gray-500 font-semibold block mb-4"
-        >Our supporters</span
-      >
-      <div
-        class="grid grid-cols-3 sm:grid-cols-6 gap-6 text-gray-500 font-semibold text-sm text-center"
-      >
-        <span>logoipsum</span>
-        <span>logoipsum</span>
-        <span>logoipsum</span>
-        <span>logoipsum</span>
-        <span>logoipsum</span>
-        <span>logoipsum</span>
-      </div>
-    </div>
+    <img src="assets/images/peopleGroup.png" class="journey__img" />
   </div>
 </section>
 
-<section class="bg-white py-16">
-  <div class="max-w-6xl mx-auto px-6 text-center">
-    <h2 class="text-3xl font-bold mb-12">Awards & Recognitions</h2>
+<section class="team">
+  <div class="team__container">
+    <h2 class="team__title">Meet our team</h2>
+    <p class="team__subtitle">Lorem ipsum dolor sit amet.</p>
 
-    <div class="grid grid-cols-2 md:grid-cols-4 gap-10">
-      <div>
-        <div class="text-yellow-400 text-3xl mb-3">★</div>
-        <div class="font-semibold text-sm">2021</div>
-        <div class="text-gray-500 text-xs">Best NGO Award</div>
+    <div class="team__grid">
+      <div class="member">
+        <img src="assets/images/justMan.png" class="member__img" />
+        <div class="member__name">Leonard John Davies</div>
+        <div class="member__role">Founder, CEO</div>
       </div>
-      <div>
-        <div class="text-yellow-400 text-3xl mb-3">★</div>
-        <div class="font-semibold text-sm">2018</div>
-        <div class="text-gray-500 text-xs">Global Award</div>
+      <div class="member">
+        <img src="assets/images/justMan.png" class="member__img" />
+        <div class="member__name">Francis Weber</div>
+        <div class="member__role">Vice Chairman</div>
       </div>
-      <div>
-        <div class="text-yellow-400 text-3xl mb-3">★</div>
-        <div class="font-semibold text-sm">2014</div>
-        <div class="text-gray-500 text-xs">CSR Award</div>
+      <div class="member">
+        <img src="assets/images/justMan.png" class="member__img" />
+        <div class="member__name">Kyla Obrien</div>
+        <div class="member__role">Head of Authority</div>
       </div>
-      <div>
-        <div class="text-yellow-400 text-3xl mb-3">★</div>
-        <div class="font-semibold text-sm">2010</div>
-        <div class="text-gray-500 text-xs">NGO of the year</div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<section class="bg-[#FCD34D] py-16">
-  <div class="max-w-6xl mx-auto px-6 grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-    <div>
-      <span class="uppercase tracking-widest text-xs font-semibold">Our journey</span>
-      <h2 class="text-3xl font-bold mt-3 mb-4">How we raised 34M</h2>
-      <p class="mb-6 text-sm">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-      <div class="flex gap-8 text-sm font-semibold">
-        <div>34M+<br /><span class="text-xs font-normal">Donations</span></div>
-        <div>400+<br /><span class="text-xs font-normal">Volunteers</span></div>
-        <div>20+<br /><span class="text-xs font-normal">Care homes</span></div>
-      </div>
-    </div>
-
-    <img src="assets/images/peopleGroup.png" class="rounded-xl w-full object-cover h-[260px]" />
-  </div>
-</section>
-
-<section class="bg-white py-16">
-  <div class="max-w-6xl mx-auto px-6 text-center">
-    <h2 class="text-3xl font-bold mb-3">Meet our team</h2>
-    <p class="text-gray-500 text-sm mb-12">Lorem ipsum dolor sit amet.</p>
-
-    <div class="grid grid-cols-2 md:grid-cols-4 gap-8">
-      <div>
-        <img src="assets/images/justMan.png" class="rounded-lg mb-3" />
-        <div class="font-semibold text-sm">Leonard John Davies</div>
-        <div class="text-xs text-gray-500">Founder, CEO</div>
-      </div>
-      <div>
-        <img src="assets/images/justMan.png" class="rounded-lg mb-3" />
-        <div class="font-semibold text-sm">Francis Weber</div>
-        <div class="text-xs text-gray-500">Vice Chairman</div>
-      </div>
-      <div>
-        <img src="assets/images/justMan.png" class="rounded-lg mb-3" />
-        <div class="font-semibold text-sm">Kyla Obrien</div>
-        <div class="text-xs text-gray-500">Head of Authority</div>
-      </div>
-      <div>
-        <img src="assets/images/justMan.png" class="rounded-lg mb-3" />
-        <div class="font-semibold text-sm">Adrian Dixon</div>
-        <div class="text-xs text-gray-500">Support Executive</div>
+      <div class="member">
+        <img src="assets/images/justMan.png" class="member__img" />
+        <div class="member__name">Adrian Dixon</div>
+        <div class="member__role">Support Executive</div>
       </div>
     </div>
   </div>
